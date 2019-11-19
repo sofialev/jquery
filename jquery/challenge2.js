@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $("#useBilling").click(function(){
-    if (this.checked){
+    if ($(this).is(":checked")){
       $("#home").prop('disabled', true);
       $('#home').val($('#billing').val());
     }
